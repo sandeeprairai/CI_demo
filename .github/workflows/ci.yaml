@@ -4,11 +4,11 @@ on: push
 
 jobs:
   linting:
-    runs-on: ${{ matrix.os}}
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-       os: [ubuntu-latest,window-latest,macros-latest]
+       os: [ubuntu-latest, window-latest, macros-latest]
 
     steps:
       - name: code checkout
